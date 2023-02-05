@@ -35,6 +35,11 @@ All of these models now have support in OpenCore Legacy Patcher.
 
 ## Current Monterey Issues
 
+::: details Bluetooth Support Dropped (Resolved in 0.2.5 and newer) -> reapearing in 0.6.1
+Forversion 12.6 of Monterey and a Macpro 4.1 upgraded to 5.1 with the last BIOS 144. ... 
+The internal blue tooth don't work but the wifi is with a new Apple Broadcom BCM94360CD (but it required SIMBIOS Macpro7.1 minimal)
+Hideez USB key don't appeard and is not recognised either 
+
 ### MacBookPro11,3 booting issue without Kepler acceleration
 
 Due to the display being routed through the NVIDIA Kepler card and macOS being rendered on the Intel iGPU, users have been experiencing issues booting without post-install patches applied ([see here for more info](https://github.com/dortania/OpenCore-Legacy-Patcher/issues/522).) Currently the only workaround is to install the patches in safe mode, by holding down `Shift+Enter` when you select macOS in the OCLP boot picker.
@@ -76,7 +81,7 @@ The following models lost Wifi support in macOS Monterey due to their legacy Wir
 * MacBook5,x and older
 * MacBookAir2,1 and older
 * MacBookPro7,1 and older
-  * MacBookPro6,x is exempt
+* MacBookPro6,x is exempt
 * MacPro5,1 and older
 
 Note: BCM943224, BCM94331, BCM94360 and BCM943602 are still fully supported by OpenCore Legacy Patcher
